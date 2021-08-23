@@ -10,7 +10,25 @@ const { phone, price, color, id } = fish;
 // console.log(phone, color);
 // console.log(phone, id);
 
-const company = { name: 'GP', ceo: { name: 'Ajmol', id: 1, food: 'fuchka' }, web: { work: 'website developemnt', employee: 22, framework: 'react' } };
+const company = { 
+    name: 'GP', 
+    ceo: { 
+        name: 'Ajmol', 
+        id: 1, 
+        food: 'fuchka' 
+    }, 
+    web: { 
+        work: 'website developemnt', 
+        employee: 22, 
+        framework: 'react', 
+        tech: 
+        { 
+            first: 'html', 
+            second: 'css', 
+            third: 'js' 
+        }
+    } 
+};
 
 // const work = company.web.work;
 // const framework = company.web.framework;
@@ -18,5 +36,6 @@ const company = { name: 'GP', ceo: { name: 'Ajmol', id: 1, food: 'fuchka' }, web
 
 const {work, employee} = company.web;
 const {name, food} = company.ceo;
+const {first, second, third} = company.web.tech;
 
-console.log(work, employee, name, food);
+console.log(work, employee, name, food, first, second, third);
